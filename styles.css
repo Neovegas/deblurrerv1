@@ -1,0 +1,132 @@
+
+:root {
+    --dark: #e7eaf2;
+    --white: #e7eaf2;
+    --white_accent: #073B4C;
+    --dark_accent: #ffd166;
+  
+    --upload: #00020200;
+    --reset: #fc4b3b;
+    --process: #4CAF50;
+    --download: #0099ff;
+  
+    --upload_txt: #1e1500;
+    --reset_txt: #340f0b;
+    --process_txt: #0d1e0e;
+    --download_txt: #00243c;
+  
+    --disabled: #777777;
+}
+
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    background-color: #000000;
+    color: #000000;;
+    font-family: Geologica, sans-serif;
+    font-weight: bold; 
+}
+
+/* Header styles */
+header {
+    
+    background-color: var(--upload);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.top_links {
+    color: var(--white);
+}
+
+.logo {
+    color: var(--white);
+    display: flex; /* Make the logo and text inline */
+    align-items: center; /* Vertically align the content */
+    font-size: 24px;
+}
+
+.logo img {
+    width: 64px; /* Adjust the width as needed */
+    height: 64px; /* Adjust the height as needed */
+    margin-right: 10px; /* Add some spacing between the logo and text */
+}
+
+
+ul {
+    
+    list-style: none;
+}
+
+li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark);
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--dark); /* Change the color to your choice */
+}
+
+/* Hero section styles */
+.hero {
+    background-color: #000000;
+    background-image: url('bg.png');
+    background-size:cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    color : var(--dark);
+
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    background-color: var( --dark_accent);
+    color: var(--upload_txt);
+    padding: 10px 20px;
+    border: 1px solid transparent; /* Add a transparent border */
+    border-radius: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: background-color 0.3s, border-color 0.3s; /* Combine transitions */
+}
+
+.cta-button:hover {
+    background-color: transparent; /* Set the background to transparent */
+    border-color: var(--dark);
+}
